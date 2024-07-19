@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de puntaje de riesgo</title>
+    <link rel="icon" href="https://i.postimg.cc/d0br66Lx/ZAMBA-CO-1.png">
+    <link rel="stylesheet" href="riskStyle.css">
 </head>
 <body>
-    
+    <header>
+        <img src="https://i.postimg.cc/tTFPM66C/ZAMBA-CO-1-1.png" alt="zamba logo">
+        <p>Puntaje de riesgo</p>
+    </header>
+
+    <section class="title-container">
+        <h1>Bienvenido a la calculadora de riesgo de Zamba.co</h1>
+    </section>
+
+    <section class="text-container">
+        <h2 class="text-title">Cosas a tener en cuenta</h2>
+        <p class="text-explanation">Recuerda que los datos que debes ingresar a esta calculadora deben venir de iris o iovation</p>
+    </section>
+
+    <section class="input-container">
+        <form>
+            <input type="text" id="registro">
+            <label for="registro">Ciudad de registro</label>
+
+            <input type="number" id="IP">
+            <label for="IP">Cantidad de links por IP</label>
+
+            <input type="number" id="device">
+            <label for="device">Cantidad de links por dispositivo</label>
+
+            <input type="number" id="depositos">
+            <label for="depositos">monto total de depositos</label>
+
+            <input type="number" id="retiros">
+            <label for="retiros">monto total de retiros</label>
+
+            <input type="text" id="caja">
+            <label for="caja">Valor total de caja</label>
+
+            <p>Que tipo de juego usa mas?</p>
+            <input type="radio" id="juegos-casino">
+            <label for="juegos-casino">Casino</label>
+            <input type="radio" id="juegos-sports">
+            <label for="juegos-sports">Deportivas</label>
+
+            <input type="number" id="ngr">
+            <label for="ngr">Valor total de NGR</label>
+
+            <input type="text" id="docs">
+            <label for="docs">Que documentos tiene el cliente</label>
+
+            <input type="submit" id="registro">
+        </form>
+    </section>
+
+    <section class="result-container">
+        <span class="">result</span>
+    </section>
+    <script href="riskLogic.js"></script>
 </body>
 </html>
